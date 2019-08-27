@@ -13,7 +13,7 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main container page">
+		<main id="main" class="site-main single-posts container">
 
 			<?php
 
@@ -21,7 +21,10 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 
-				get_template_part( 'template-parts/content/content', 'page' );
+				get_template_part( 'template-parts/content/content', 'single' );
+
+				the_post_navigation( array( 'next_text' => __( '<span class="meta-nav">Next Post</span> %title' ), 'prev_text' => __( '<span class="meta-nav">Previous Post</span> %title' ) ) ); 
+
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) {

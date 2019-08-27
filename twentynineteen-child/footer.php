@@ -19,12 +19,12 @@
 
 
 
-				<p class="footer">
+				<p class="copy">
         Copyright 2019 Tech Sisters
         </p>
 
 
-	</footer><!-- #colophon --> -->
+	</footer><!-- #colophon --> 
 
 </div><!-- #page -->
 

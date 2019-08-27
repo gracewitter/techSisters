@@ -13,6 +13,17 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146446797-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146446797-1');
+</script>
+
+	
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tech Sisters</title>
@@ -26,12 +37,15 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="post-<?php the_ID(); ?>" <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+				<div class="container">
+					
+				
 		    <a class=navbar-brand href="http://www.tech-sisters.com">
 		      <img src="http://www.tech-sisters.com/wp-content/uploads/2019/08/logo.png" class="logo" alt="Tech Sisters Logo">
 		    </a>
@@ -51,6 +65,7 @@
 		        </li>
 		      </ul>
 		    </div>
+					</div>
 		  </nav>
 		</header><!-- #masthead -->
 

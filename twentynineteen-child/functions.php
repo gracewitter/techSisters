@@ -10,9 +10,12 @@
 * @since 1.0.0
 */
 
+
+
 // Enqueue scripts and styles
 function twentynineteen_child_scripts(){
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentynineteen-style' ));
 }
-add_action( 'wp_enqueue_scripts', 'tribe_child_scripts' );
+
+
