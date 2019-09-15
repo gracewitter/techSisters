@@ -63,6 +63,9 @@
 		        <li class="nav-item">
 		          <a class="nav-link" href="http://www.tech-sisters.com/articles">Articles</a>
 		        </li>
+				  <li class="nav-item">
+		          <a class="nav-link" href="http://www.tech-sisters.com/interviews">Interviews</a>
+		        </li>
 		      </ul>
 		    </div>
 					</div>

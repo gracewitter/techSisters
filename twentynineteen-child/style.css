@@ -36,11 +36,10 @@ a:hover{
 
 article a {
 	
-	border-bottom: 1px solid black;
+	text-decoration: underline;
 }
 
 article a:hover {
-	border-bottom: 3px solid;
 	font-weight: bold;
 }
 
@@ -154,6 +153,11 @@ button, .button, .submit, .comment-reply-link:hover {
 
 .cta-button:hover{
   box-shadow: 1px 1px 10px #2E2E2E;
+}
+
+.pt-cv-wrapper img {
+	height: 200px;
+	object-fit: cover;
 }
 
 .pt-cv-thumbnail:hover{

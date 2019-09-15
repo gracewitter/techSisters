@@ -1,0 +1,375 @@
+/*
+Theme Name:   Twenty Nineteen Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Twenty Nineteen Child Theme - Twenty Nineteen
+Author:   	Grace Witter
+Author URI:   http://gracewitter.com
+Template: 	twentynineteen
+Version:      2.0.0
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twentynineteen
+*/
+/* Global styles*/
+body {
+  background: #fff;
+  word-wrap: break-word;
+  color: #404040;
+}
+
+h1, h2, h3, h4, .nav-link {
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding: 0;
+}
+
+article a {
+  text-decoration: underline;
+}
+article a:hover {
+  font-weight: bold;
+}
+
+section {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+section h2 {
+  text-align: left;
+}
+
+button, .button, .submit, .comment-reply-link {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-weight: normal;
+  font-size: 1rem;
+  transition: 0.2s;
+  padding: 0.21875em 0;
+  color: black;
+}
+button:hover, .button:hover, .submit:hover, .comment-reply-link:hover {
+  border-bottom: 4px solid;
+  margin-bottom: -2px;
+  font-weight: bold;
+}
+
+.cta-button {
+  background: #FF6619 !important;
+  border-color: #FF6619 !important;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+.cta-button:hover {
+  box-shadow: 1px 1px 10px #2E2E2E;
+}
+
+.front-page .entry-header,
+.page .entry-header {
+  display: none;
+}
+
+.site-main {
+  margin-top: 5em;
+}
+
+.sub-text {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.entry-meta,
+.entry-footer,
+.meta-nav {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.entry-footer {
+  display: flex;
+  flex-direction: row;
+}
+.entry-footer a {
+  color: black;
+  text-transform: capitalize;
+  border: none;
+}
+.entry-footer a:hover {
+  border: none;
+  font-weight: bold;
+}
+
+.entry-meta:after {
+  border-top: 1px solid;
+  width: 10%;
+  content: "";
+  display: block;
+  margin-bottom: 2em;
+}
+
+.post-categories {
+  list-style: none;
+  margin: 0 1em 0 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.post-categories li {
+  padding-left: 2px;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.post-navigation {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  line-height: 1.3;
+  margin: 3.5em 0;
+  overflow: hidden;
+  padding: 0.875em 0;
+}
+
+.nav-previous,
+.nav-next {
+  width: 50%;
+  font-size: 1.5rem;
+}
+.nav-previous a,
+.nav-next a {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: none;
+}
+.nav-previous a:hover,
+.nav-next a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+.nav-next {
+  float: right;
+  text-align: right;
+  margin-top: -3rem;
+}
+
+#post-1 .nav-next {
+  margin: 0;
+}
+
+.comments-area {
+  margin: 3.5em 0;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0 0 3.5em;
+  padding: 0;
+}
+.comment-list .comment {
+  margin-top: 3.5em;
+}
+
+.comment-meta {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.comment-author {
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.comment-author a,
+.comment-metadata a {
+  color: black;
+  border: none;
+}
+.comment-author a:hover,
+.comment-metadata a:hover {
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+
+@media screen and (min-width: 70em) {
+  .comment .comment-meta {
+    float: left;
+    width: 25%;
+  }
+
+  .comment .comment-metadata span {
+    clear: both;
+    display: block;
+    margin: 0 0 0.4375em;
+  }
+}
+.avatar {
+  display: none;
+}
+
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.comment-form-comment label {
+  font-style: italic;
+}
+
+/* End Global */
+/* Header */
+.logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 10px #2F3676;
+}
+.navbar-light .navbar-toggler {
+  border: 0;
+  color: #000 !important;
+  font-size: 1.75em;
+}
+.navbar-links-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 1.1em;
+  border: none;
+}
+.nav-link:hover {
+  border-bottom: 3px solid;
+}
+
+/* End Header */
+/* Footer */
+.site-footer,
+.fp-footer {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.site-footer .copy {
+  text-transform: uppercase;
+}
+
+/* End Footer */
+/* Front Page */
+.hero {
+  background: linear-gradient(225deg, #1C7BE4 0%, rgba(28, 123, 228, 0.5) 100%);
+  padding: 0;
+  margin-top: -3em;
+  width: 100%;
+}
+.hero__content {
+  margin-top: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width: 992px) {
+  .hero__text__container {
+    order: 2;
+  }
+}
+.hero__text__container h1,
+.hero__text__container p {
+  margin-bottom: 1em;
+}
+@media (max-width: 992px) {
+  .hero__image__container {
+    order: 1;
+  }
+}
+
+.illustration {
+  max-width: 600px !important;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-section .illusration,
+.about-section h3,
+.about-section .button {
+  margin: 1em 0;
+}
+
+.fp-footer {
+  margin-bottom: -5em;
+}
+.fp-footer .note {
+  font-style: italic;
+}
+
+/* End Front Page */
+/* Content View */
+.pt-cv-wrapper img {
+  height: 200px;
+  object-fit: cover;
+}
+.pt-cv-thumbnail:hover {
+  box-shadow: 1px 1px 10px #2E2E2E;
+}
+.pt-cv-content .btn {
+  color: #000;
+  background: none;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+  padding: 0;
+}
+.pt-cv-content .btn:hover {
+  text-decoration: underline;
+  background: none;
+  color: black;
+  font-weight: bold;
+}
+.pt-cv-ifield {
+  width: 300px;
+  margin: 1em auto;
+}
+.pt-cv-title a {
+  color: #000;
+  border: none;
+}
+
+/*# sourceMappingURL=output.css.map */
