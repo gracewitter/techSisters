@@ -1,0 +1,47 @@
+﻿$base-font-size: 1rem;
+$line-height-ratio: 1.5;
+$base-line-height: $base-font-size * $line-height-ratio;
+$base-vertical-spacing: $base-line-height / 2;
+
+$type-scale: ( 
+-2: 0.75rem, //extra small text
+-1: 0.906rem, // small text
+0: 1rem, // body text
+1: 1.207rem, // h6 | h3, h4 mobile
+2: 1.333rem, // h5 | h2 mobile
+3: 1.609rem, // h4 | h1 mobile
+4: 1.777rem, // h3
+5: 2.145rem, // h2
+7: 2.859rem // h1
+);
+
+$spacing-levels: ('half': 0.5, 'normal': 1, 'double': 2, 'triple': 3);
+
+
+@function type-scale($level) {
+    @return map-get($type-scale, $level);
+}
+
+
+@mixin vertical-scale($base-line-height, $level, $bottom-rows: 1, $top-rows: 0, $use-height: false) {
+    $font-size: type-scale($level);
+    $multiplier: ceil($font-size / $base-line-height);
+
+    @if $use-height {
+        height: $base-line-height * $multiplier;
+        margin-top: $base-line-height * $top-rows;
+        margin-bottom: $base-line-height * $bottom-rows;
+    }
+    @else {
+        font-size: $font-size;
+        line-height: $base-line-height * $multiplier;
+        margin-top: $base-line-height * $top-rows;
+        margin-bottom: $base-line-height * $bottom-rows;
+    }
+}
+
+@mixin vertical-spacing($spacing-level: 'normal') {
+    $spacing-multiplier: map-get($spacing-levels, $spacing-level);
+    
+    margin-bottom: $base-line-height * $spacing-multiplier;
+}

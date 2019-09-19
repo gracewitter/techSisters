@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme
+ * The header for our theme's front page
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This is the template that displays all of the <head> section and everything up until the front page hero image
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -73,3 +73,21 @@
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+    <section id="primary" class="content-area">
+      <main id="main" class="site-main  front-page">
+        <section class="jumbotron hero container-fluid">
+              <div class="row hero__content">
+                <div class="hero__text__container col-lg-5">
+                  <h1>A newsletter for amazing (Muslim) sisters in tech</h1>
+                  <p>
+                    Every two weeks, we'll deliver our latest articles and roundup the best resources we can find to help you get happy in your tech career.
+                  </p>
+        <a href="http://eepurl.com/gAEVu5" target="_blank" rel="noopener noreferrer" style="border:none">
+        <button class="cta-button btn btn-lg">I want to join!</button>
+        </a>
+                </div>
+                <div class="hero__image__container col-lg-6">
+                  <img class="illustration" src="http://www.tech-sisters.com/wp-content/uploads/2019/08/hero-illustration.png" alt="illustration of a three women working together over a laptop">
+                </div>
+              </div>
+            </section>

@@ -9,10 +9,8 @@
  * @since twentynineteen 2.0
  */
 
-get_header(); ?>
+get_header('fp'); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main container front-page">
 
 		<?php
 		if ( have_posts() ) {

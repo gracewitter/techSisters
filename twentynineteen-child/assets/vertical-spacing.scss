@@ -1,0 +1,36 @@
+﻿/// <reference path="../_mixins.scss" />
+/// <reference path="../_variables.scss" />
+/// <reference path="../base/thirdparty/_foundationSettings.scss" />
+
+.vertical-spacing {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@include breakpoint(medium) {
+    .vertical-spacing {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@include breakpoint(large) {
+    .vertical-spacing {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@include breakpoint(xlarge) {
+    .vertical-spacing {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.ti-beside.vertical-spacing,
+.feature-card-listing.vertical-spacing,
+.rte-block.vertical-spacing {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

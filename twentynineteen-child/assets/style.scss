@@ -10,6 +10,7 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  twentynineteen
 */
 
+// <reference path="vertical-rhythm.scss" />
 
 /* Global styles*/
 body {
@@ -25,6 +26,7 @@ h1, h2, h3, h4, .nav-link {
 
 p {
     font-family: 'Lato', sans-serif;
+    @import vertical-rhythm($base-line-height, 0);
 }
 
 a,
@@ -385,6 +387,10 @@ button, .button, .submit, .comment-reply-link {
         &-ifield {
             width: 300px;
             margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         &-title a {

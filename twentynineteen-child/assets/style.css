@@ -366,10 +366,14 @@ button:hover, .button:hover, .submit:hover, .comment-reply-link:hover {
 .pt-cv-ifield {
   width: 300px;
   margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .pt-cv-title a {
   color: #000;
   border: none;
 }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=style.css.map */
