@@ -17,10 +17,6 @@ $type-scale: (
 
 $spacing-levels: ('half': 0.5, 'normal': 1, 'double': 2, 'triple': 3);
 
-$breakpoints: ( small: 0, medium: 641px, large: 1025px, xlarge: 1201px, xxlarge: 1441px, );
-$print-breakpoint: large;
-$breakpoint-classes: (small medium large);
-
 
 @function type-scale($level) {
     @return map-get($type-scale, $level);

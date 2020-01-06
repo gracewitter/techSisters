@@ -26,10 +26,10 @@
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Sisters</title>
+  
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
   <link rel="stylesheet" href="assets/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lato|Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -42,7 +42,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<nav class="navbar navbar-expand-lg fixed-top">
 				<div class="container">
 
 
@@ -50,22 +50,28 @@
 		      <img src="http://www.tech-sisters.com/wp-content/uploads/2019/08/logo.png" class="logo" alt="Tech Sisters Logo">
 		    </a>
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
+		      <span class="">Menu</span>
 		    </button>
 		    <div class="collapse navbar-collapse navbar-links-container" id="navbarSupportedContent">
 		      <ul class="navbar-nav">
-		        <li class="nav-item active">
+		        <li class="nav-item">
 		          <a class="nav-link" href="http://www.tech-sisters.com">Home<span class="sr-only">(current)</span> </a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="http://www.tech-sisters.com/about">About</a>
 		        </li>
+		          <li class="nav-item">
+		          <a class="nav-link" href="http://www.tech-sisters.com/interviews">Interviews</a>
+		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="http://www.tech-sisters.com/articles">Articles</a>
 		        </li>
 				  <li class="nav-item">
-		          <a class="nav-link" href="http://www.tech-sisters.com/interviews">Interviews</a>
+		          <a class="nav-link" href="http://www.tech-sisters.com/contact-us">Contact Us</a>
 		        </li>
+				 <li class="nav-item cta-link">
+		          <a class="nav-link" href="http://eepurl.com/gAEVu5">Newsletter</a>
+		        </li> 
 		      </ul>
 		    </div>
 					</div>

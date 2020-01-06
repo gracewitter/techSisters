@@ -19,11 +19,11 @@ get_header();
 
 			/* Start the Loop */
 			while ( have_posts() ) :
-				the_post();
+			the_post();
 
 				get_template_part( 'template-parts/content/content', 'single' );
 
-				the_post_navigation( array( 'next_text' => __( '<span class="meta-nav">Next Post</span> %title' ), 'prev_text' => __( '<span class="meta-nav">Previous Post</span> %title' ) ) ); 
+				/*the_post_navigation( array( 'next_text' => __( '<span class="meta-nav">Next Post</span> %title' ), 'prev_text' => __( '<span class="meta-nav">Previous Post</span> %title' ) ) ); */
 
 
 				// If comments are open or we have at least one comment, load up the comment template.

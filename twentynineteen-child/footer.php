@@ -16,14 +16,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-
+		<div class="container">
+			
+		
+<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 
 
 				<p class="copy">
         Copyright 2019 Tech Sisters
         </p>
 
-
+</div>
 	</footer><!-- #colophon --> 
 
 </div><!-- #page -->
